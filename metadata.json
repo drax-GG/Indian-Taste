@@ -1,0 +1,6 @@
+{
+  "name": "Indian Taste",
+  "description": "Authentic Indian Flavors in the Heart of Akola. A modern, dark-themed restaurant experience with premium traditional dishes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

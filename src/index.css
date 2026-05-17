@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #D4AF37;
+  --color-charcoal: #1A1A1A;
+  --color-dark: #0A0A0A;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased selection:bg-gold/30;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold text-dark font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 uppercase tracking-wider text-sm;
+  }
+  
+  .btn-outline-gold {
+    @apply border border-gold text-gold font-semibold px-8 py-3 rounded-none transition-all duration-300 hover:bg-gold hover:text-dark uppercase tracking-wider text-sm;
+  }
+
+  .nav-link {
+    @apply text-sm uppercase tracking-widest text-gray-400 hover:text-gold transition-colors duration-200;
+  }
+  
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-white mb-4;
+  }
+  
+  .gold-accent {
+    @apply text-gold;
+  }
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.card-glass {
+  background: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
