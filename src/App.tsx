@@ -36,7 +36,7 @@ const MENU_DATA: Dish[] = [
     name: "Murgh Malai Tikka",
     price: "₹380",
     description: "Creamy cardamom flavored boneless chicken pieces grilled in tandoor.",
-    image: "/src/assets/images/tandoori_platter_luxury_1779032250699.png",
+    image: "/images/tandoori_platter_luxury_1779032250699.png",
     category: "Starters"
   },
   {
@@ -44,7 +44,7 @@ const MENU_DATA: Dish[] = [
     name: "Signature Butter Chicken",
     price: "₹450",
     description: "Tandoori chicken pieces cooked in a rich, creamy tomato gravy with butter.",
-    image: "/src/assets/images/butter_chicken_closeup_1779032226910.png",
+    image: "/images/butter_chicken_closeup_1779032226910.png",
     category: "Main Course"
   },
   {
@@ -52,7 +52,7 @@ const MENU_DATA: Dish[] = [
     name: "Dum Pukht Biryani",
     price: "₹420",
     description: "Aromatic long-grain basmati rice cooked with succulent lamb and spices.",
-    image: "/src/assets/images/hero_biryani_spread_1779032196157.png",
+    image: "/images/hero_biryani_spread_1779032196157.png",
     category: "Main Course"
   },
   {
@@ -60,7 +60,7 @@ const MENU_DATA: Dish[] = [
     name: "Paneer Lababdar",
     price: "₹360",
     description: "Cottage cheese cubes tossed in a luscious tomato and onion gravy.",
-    image: "/src/assets/images/butter_chicken_closeup_1779032226910.png",
+    image: "/images/butter_chicken_closeup_1779032226910.png",
     category: "Main Course"
   },
   {
@@ -68,7 +68,7 @@ const MENU_DATA: Dish[] = [
     name: "Saffron Shahi Tukda",
     price: "₹220",
     description: "Royal bread pudding soaked in saffron-infused milk and dry fruits.",
-    image: "/src/assets/images/gulab_jamun_luxury_1779032267035.png",
+    image: "/images/gulab_jamun_luxury_1779032267035.png",
     category: "Desserts"
   },
   {
@@ -76,7 +76,7 @@ const MENU_DATA: Dish[] = [
     name: "Gulab Jamun with Rabri",
     price: "₹180",
     description: "Classic Indian milk-based sweets served with thick condensed milk.",
-    image: "/src/assets/images/gulab_jamun_luxury_1779032267035.png",
+    image: "/images/gulab_jamun_luxury_1779032267035.png",
     category: "Desserts"
   }
 ];
@@ -213,7 +213,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/images/hero_biryani_spread_1779032196157.png" 
+            src="/images/hero_biryani_spread_1779032196157.png" 
             className="w-full h-full object-cover opacity-60 scale-105"
             alt="Indian Feast"
             referrerPolicy="no-referrer"
@@ -263,7 +263,7 @@ const Home = () => {
              className="relative"
           >
             <img 
-              src="/src/assets/images/restaurant_interior_luxury_1779032210963.png" 
+              src="/images/restaurant_interior_luxury_1779032210963.png" 
               className="w-full aspect-square object-cover"
               alt="Interior"
               referrerPolicy="no-referrer"
@@ -345,14 +345,14 @@ const Home = () => {
         </div>
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "/src/assets/images/hero_biryani_spread_1779032196157.png",
-            "/src/assets/images/restaurant_interior_luxury_1779032210963.png",
-            "/src/assets/images/butter_chicken_closeup_1779032226910.png",
-            "/src/assets/images/tandoori_platter_luxury_1779032250699.png",
-            "/src/assets/images/gulab_jamun_luxury_1779032267035.png",
-            "/src/assets/images/hero_biryani_spread_1779032196157.png",
-            "/src/assets/images/restaurant_interior_luxury_1779032210963.png",
-            "/src/assets/images/butter_chicken_closeup_1779032226910.png",
+            "/images/hero_biryani_spread_1779032196157.png",
+            "/images/restaurant_interior_luxury_1779032210963.png",
+            "/images/butter_chicken_closeup_1779032226910.png",
+            "/images/tandoori_platter_luxury_1779032250699.png",
+            "/images/gulab_jamun_luxury_1779032267035.png",
+            "/images/hero_biryani_spread_1779032196157.png",
+            "/images/restaurant_interior_luxury_1779032210963.png",
+            "/images/butter_chicken_closeup_1779032226910.png",
           ].map((img, idx) => (
             <motion.div 
               key={idx}
@@ -471,7 +471,7 @@ const AboutPage = () => (
           viewport={{ once: true }}
           className="order-2 lg:order-1"
         >
-          <img src="/src/assets/images/restaurant_interior_luxury_1779032210963.png" className="w-full aspect-[4/5] object-cover" alt="About" referrerPolicy="no-referrer" />
+          <img src="/images/restaurant_interior_luxury_1779032210963.png" className="w-full aspect-[4/5] object-cover" alt="About" referrerPolicy="no-referrer" />
         </motion.div>
         <div className="space-y-10 order-1 lg:order-2">
           <span className="text-gold uppercase tracking-widest text-xs font-bold">The Journey</span>
@@ -651,11 +651,11 @@ const ContactPage = () => {
         {/* Map */}
         <div className="mt-12 relative h-[400px] border border-white/5 group overflow-hidden">
           <div className="absolute inset-0 bg-charcoal flex flex-col items-center justify-center space-y-4">
-             <div className="absolute inset-0 grayscale opacity-20 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/77.0271,20.7002,15/1200x400?access_token=pk.dummy')] bg-cover"></div>
+             <div className="absolute inset-0 grayscale opacity-20 bg-[url('/images/restaurant_interior_luxury_1779032210963.png')] bg-cover bg-center"></div>
              <div className="relative z-10 text-center">
                 <MapPin className="text-gold mx-auto mb-2 animate-bounce" size={32} />
-                <p className="text-white font-bold tracking-widest text-sm">INDIAN TASTE AKOLA</p>
-                <p className="text-gray-500 text-xs mt-1">Visit us today for an authentic experience</p>
+                <p className="text-white font-bold tracking-widest text-sm text-shadow">INDIAN TASTE AKOLA</p>
+                <p className="text-gray-200 text-xs mt-1 text-shadow">Visit us today for an authentic experience</p>
               </div>
           </div>
         </div>
